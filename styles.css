@@ -2,12 +2,13 @@
 
 /* ---WHOLE DOCUMENT--- */
 html {
-	-webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
     box-sizing: border-box;
 	font-family: 'IM Fell English', serif;
 	border-top: 0;
 	border-bottom: 0;
+	overflow: auto;
 }
 /* LINKS */
 a {
@@ -16,12 +17,16 @@ a {
 }
 a.active {
 	color: seagreen;
+	background-color: rgb(144, 228, 151);
 	font-weight: bold;
 	font-family: 'Alegreya Sans SC', sans-serif;
 }
 body {
 	margin: 0;
 	background: rgb(144, 228, 151);
+	height: auto;
+	width: auto;
+	overflow: auto;
 }
 h1,h2,h3,h4,h5,h6 {
 	font-family:'Alegreya Sans SC', sans-serif;
@@ -48,7 +53,7 @@ li {
     margin-bottom: 1rem;
 	font-family: 'Alegreya Sans SC', sans-serif;
 	font-size: 130%;
-	width: 100%;
+	width: auto;
 }
 .top-nav li, .bottom-nav li{
 	color: black;
@@ -69,7 +74,7 @@ aside#sidebar {
 	margin-right: 1rem;
 	margin-bottom: 1rem;
 	overflow: auto;
-	padding: 0px;
+	padding: 0;
 	width: 20%;
 /* content */
 	background: white;
@@ -77,12 +82,15 @@ aside#sidebar {
 	font-size: large;
 	line-height: 1.5rem;
 }
-
 aside#sidebar p, #sidebar dl {
 	margin-top: 0;
 	margin-left: 18px;
 	margin-right: 18px;
 	margin-bottom: 0;
+}
+aside#sidebar ul {
+	-webkit-padding-start: 0;
+	text-align: center;
 }
 /* DEFINITION LIST */
 dt {
